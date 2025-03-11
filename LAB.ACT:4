@@ -1,25 +1,26 @@
-def how_many_years_old(age):
-    
-    if age < 0:
-        print("Invalid age! ANO KA SANGGOL?")
-    
-    elif age <= 14:
-        print("BATANG BATA KAPA DI MO PA ALAM TO")
-    elif age <= 18:
-        print("WOW PWEDE NA MAKULONG")
-    elif age <= 50:
-        print("TANDA MO NA MUSTA SPINE MO?")
-    else:
-        print("OLD AHH")
-
-
-print("Welcome to the classifier where you will know how old you are na bes")
+def teddy(score):
+    if score < 0:
+        print("Invalid Grade! Please enter a value between 60 and 100.")
+         
+    elif score <= 60:
+        print("GRADE F")        
+    elif score <= 65:
+        print("GRADE D")        
+    elif score <= 75:
+        print(" GRADE C")        
+    elif score <= 90:
+        print("GRADE B")        
+    elif score <= 100:
+        print(" GRADE A")
+    else: 
+        print("bagsak")
+       
+print("Assigning Grades")
 
 while True:
     try:
-        
-        teddy = input("Ilang taon kana tol? : ")
-        
-        how_many_years_old(int(teddy))
+        gonzales = input("State you Grade: ")
+        teddy(int(gonzales))        
     except ValueError:
-        print("baliw")
+        print("Invalid score! Please enter a value between 0 and 100.")
+        break
