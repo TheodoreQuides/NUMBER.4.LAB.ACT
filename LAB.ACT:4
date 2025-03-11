@@ -1,0 +1,25 @@
+def how_many_years_old(age):
+    
+    if age < 0:
+        print("Invalid age! ANO KA SANGGOL?")
+    
+    elif age <= 14:
+        print("BATANG BATA KAPA DI MO PA ALAM TO")
+    elif age <= 18:
+        print("WOW PWEDE NA MAKULONG")
+    elif age <= 50:
+        print("TANDA MO NA MUSTA SPINE MO?")
+    else:
+        print("OLD AHH")
+
+
+print("Welcome to the classifier where you will know how old you are na bes")
+
+while True:
+    try:
+        
+        teddy = input("Ilang taon kana tol? : ")
+        
+        how_many_years_old(int(teddy))
+    except ValueError:
+        print("baliw")
